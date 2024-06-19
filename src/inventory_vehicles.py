@@ -2,7 +2,7 @@
 # Вариант 1
 # vehicles = []
 
-# def add_vehicle(): 
+# def add_vehicle():
 #     create = input ("Create vehicle:" )
 #     model = input ("Enter vehicle model: ")
 #     year = input ("Enter vehicle year:")
@@ -11,13 +11,13 @@
 
 #     vehicle = {
 #         'number':len(vehicles)+1,
-#         'create': create, 
-#         'model':  model, 
-#         'year': year, 
+#         'create': create,
+#         'model':  model,
+#         'year': year,
 #         'color': color,
 #         'mileage': mileage
 #         }
-    
+
 #     print('.'*50)
 
 #     vehicles.append(vehicle)
@@ -43,7 +43,7 @@
 #     if not found:
 #         print("Vehicle with the specified number does not exist.")
 
-# def view_inventory(): 
+# def view_inventory():
 #     print("Current Inventory: ")
 #     for count, vehicle in enumerate(vehicles, start=1):
 #         print(f"#{count}")
@@ -83,7 +83,7 @@
 #     if not found:
 #         print("Vehicle with the specified number does not exist.")
 
-# def export_inventory(): 
+# def export_inventory():
 #     print("Exporting Current Inventory:")
 #     try:
 #         with open('inventory.txt', 'w') as file:
@@ -95,19 +95,19 @@
 
 
 
-# Вариант 2 с класове: 
+# Вариант 2 с класове:
 
-class Vehicle: 
+class Vehicle:
     def __init__ (self, create, model, year, color, mileage):
         self.create = create
-        self. model = model 
+        self. model = model
         self. year = year
-        self.color = color 
+        self.color = color
         self.mileage = mileage
 
     def __str__(self):
         return f"{self.create}, {self.model}, {self.year}, {self.color}, {self.mileage}"
-    
+
 
 class Inventory:
     def __init__(self):
@@ -128,7 +128,7 @@ class Inventory:
         print("Deleting vehicle from your inventory.")
         vehicle_number = int(input("Enter the number of the vehicle you want to delete:"))
 
-        if 0 < vehicle_number <= len(self.vehicles): 
+        if 0 < vehicle_number <= len(self.vehicles):
             del self.vehicles[vehicle_number -1]
             print("Vehicle deleted from the inventory.")
 
@@ -137,7 +137,7 @@ class Inventory:
 
     def view_inventory(self):
         print("Current Inventory:")
-        for count, vehicle in enumerate(self, vehicle, start=1):
+        for count, vehicle in enumerate(self.vehicles, start=1):
             print(f"#{count}'):{vehicle}")
             print('.'*50)
 
@@ -167,10 +167,10 @@ class Inventory:
                     file.write(f"{count}, {vehicle.create}, {vehicle.model}, {vehicle.year}, {vehicle.color}, {vehicle.mileage}\n")
                     print("Export Successful!")
         except Exception as e:
-            print (f"Error exporting inventory {e}")           
+            print (f"Error exporting inventory {e}")
 
 
 
 
 
-        
+
