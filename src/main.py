@@ -35,6 +35,8 @@
 # if __name__ == "__main__":
 #     main() 
 
+
+
 # Вариант 2: с класове: 
 
 from inventory_vehicles import Inventory
