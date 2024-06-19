@@ -2,8 +2,8 @@
 
 # import inventory_vehicles
 
-# def main(): 
-#     while True: 
+# def main():
+#     while True:
 #         print ('Auto Inventory!')
 #         print('#1 Add Vehicle to Inventory')
 #         print('#2 Delete Vehicle from Inventory')
@@ -29,21 +29,21 @@
 #         elif choice == '6':
 #             print('Thanks for using the programme!')
 #             break
-#         else: 
+#         else:
 #             print('Invalid choice. Please, try again! ')
 
 # if __name__ == "__main__":
-#     main() 
+#     main()
 
 
 
-# Вариант 2: с класове: 
+# Вариант 2: с класове:
 
 from inventory_vehicles import Inventory
 
 def main():
     inventory = Inventory()
-    
+
     while True:
         print('Auto Inventory!')
         print('#1 Add Vehicle to Inventory')
