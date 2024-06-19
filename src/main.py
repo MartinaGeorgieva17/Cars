@@ -64,7 +64,7 @@ def main():
         elif choice == '3':
             inventory.view_inventory()
         elif choice == '4':
-            inventory.update_vehicle()
+            inventory.update_inventory()
         elif choice == '5':
             inventory.export_inventory()
         elif choice == '6':

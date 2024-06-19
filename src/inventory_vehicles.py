@@ -163,7 +163,7 @@ class Inventory:
 
         try:
             with open ('Inventory.txt', 'w') as file:
-                for count, vehice in enumerate(self.vehicles, start = 1):
+                for count, vehicle in enumerate(self.vehicles, start = 1):
                     file.write(f"{count}, {vehicle.create}, {vehicle.model}, {vehicle.year}, {vehicle.color}, {vehicle.mileage}\n")
                     print("Export Successful!")
         except Exception as e:
